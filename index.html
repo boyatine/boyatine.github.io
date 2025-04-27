@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Andy's Private Corner</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +12,33 @@
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <h1>This is Andy's private corner.</h1>
-    <p>If you're reading this, you're in. Maybe you are his bestie.</p>
-    <img src="images/bathtub.jpeg" alt="A bathtub" class="main-image">
-  </main>
+  <div class="container">
+    <aside class="player-section">
+      <div class="mp3-player">
+        <div class="player-display">
+          <div class="song-info">
+            <div class="song-title">Current Favorite Song</div>
+            <div class="artist-name">Prada (Valexus Remix)</div>
+          </div>
+          <div class="youtube-player">
+            <iframe 
+              width="100%" 
+              height="150" 
+              src="https://www.youtube.com/embed/MH954iFxfZ8?autoplay=0" 
+              title="Prada (Valexus Remix)" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <h1>This is Andy's private corner.</h1>
+      <p>If you're reading this, you're in. Maybe you are his bestie.</p>
+      <img src="images/bathtub.jpeg" alt="A bathtub" class="main-image">
+    </main>
+  </div>
 </body>
 </html>
