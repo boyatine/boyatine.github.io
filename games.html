@@ -8,10 +8,27 @@
   <style>
     .game-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      align-items: flex-start;
       gap: 20px;
       padding: 20px;
+      justify-content: center;
+    }
+    
+    .game-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .instructions-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      max-width: 300px;
     }
     
     canvas {
@@ -53,14 +70,17 @@
   </nav>
   <main>
     <div class="game-container">
-      <h1>2 Player Pong</h1>
-      <canvas id="pong" width="840" height="500"></canvas>
-      <br>
-      <button id="startBtn">Start</button>
-      <button id="pauseBtn">Pause</button>
-      <h2 id="score">Player 1: 0 | Player 2: 0</h2>
-      <h2 id="winner"></h2>
-      <div class="game-instructions">
+      <div class="game-section">
+        <h1>2 Player Pong</h1>
+        <canvas id="pong" width="840" height="500"></canvas>
+        <br>
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <h2 id="score">Player 1: 0 | Player 2: 0</h2>
+        <h2 id="winner"></h2>
+      </div>
+      <div class="instructions-section">
+        <h3>How to Play</h3>
         <p>Player 1: Use W and S keys to move up and down</p>
         <p>Player 2: Use I and K keys to move up and down</p>
         <p>First to 5 points wins!</p>
